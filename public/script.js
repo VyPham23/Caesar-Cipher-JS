@@ -24,7 +24,7 @@ function caesarCipherEncode(text, shift) {
     for (let i = 0; i < text.length; i++) {
       const char = text[i];
   
-      if (char.match(/[a-zA-Z]/)) {
+      if (char.match(/[a-zA-Z]/)) { //if alphabetic character
         const isUpperCase = char === char.toUpperCase();
         const baseCharCode = isUpperCase ? 'A'.charCodeAt(0) : 'a'.charCodeAt(0);
         const charCode = char.charCodeAt(0);
